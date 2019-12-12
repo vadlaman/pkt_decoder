@@ -27,3 +27,17 @@ Solution Assumptions:
     2. We assume that a packet is invalid if a packet has something other than 22,33,30 following a 0x10. i.e we
     only expect STX/ETX/DLE bitwise or'ed with 0x20 following a DLE.
 
+
+Configuration and run instructions:
+
+Compile instruction:
+$ gcc -o pkt_decoder pkt_decoder.c
+
+run instruction:
+$ ./pkt_decoder
+
+I compiled the source code on Mac OS terminal.
+
+Sample output:
+$ ./pkt_decoder
+pkt (8 bytes) - ff 02 fe ff 10 fe ff 02
